@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vahan Sewak - Vehicle Assistance App
 
 A comprehensive React Native mobile application for connecting users with verified mechanics for vehicle breakdown assistance. Built with Expo, Node.js, Express, and MongoDB.
@@ -260,3 +261,7 @@ For support and questions:
 ---
 
 **Vahan Sewak** - Your trusted vehicle assistance partner in Delhi NCR!
+=======
+# Vahan-Sewak
+Vahan Sewak aims to be India’s 24/7 nationwide roadside assistance platform — connecting stranded vehicle owners with verified mechanics, towing partners, and part suppliers through a single mobile application. The mission: “No Indian should ever be standed on the road without reliable help.”
+>>>>>>> 58e3ae2b90262164f3ded16c2b5a683dfc2a5329
