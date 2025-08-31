@@ -1,21 +1,11 @@
-# Ignore node_modules in both frontend and backend
+# Backend ignores
 backend/node_modules/
-VahanSewakApp/node_modules/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Environment files
-.env
-backend/.env
-VahanSewakApp/.env
-
-# Build and dist folders
 backend/dist/
-VahanSewakApp/build/
 
-# Mac/Windows system files
-.DS_Store
-Thumbs.db
+# Frontend ignores
+frontend/node_modules/
+frontend/build/
+
+# Env
+.env
+

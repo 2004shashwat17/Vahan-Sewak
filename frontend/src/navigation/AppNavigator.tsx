@@ -7,6 +7,8 @@ import { COLORS } from '../constants/colors';
 
 // Import screens
 import HomeScreen from '../screens/HomeScreen';
+import LandingScreen from '../screens/LandingScreen';
+import MerchantScreen from '../screens/MerchantScreen';
 import ProblemSelectionScreen from '../screens/ProblemSelectionScreen';
 import ProblemDescriptionScreen from '../screens/ProblemDescriptionScreen';
 import MobileVerificationScreen from '../screens/MobileVerificationScreen';
@@ -26,7 +28,7 @@ const EmergencyStack = () => (
       headerShown: false,
     }}
   >
-    <Stack.Screen name="Home" component={HomeScreen} />
+    <Stack.Screen name="HomeScreen" component={HomeScreen} />
     <Stack.Screen name="ProblemSelection" component={ProblemSelectionScreen} />
     <Stack.Screen name="ProblemDescription" component={ProblemDescriptionScreen} />
     <Stack.Screen name="MobileVerification" component={MobileVerificationScreen} />
@@ -100,7 +102,11 @@ const TabNavigator = () => (
 const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <TabNavigator />
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="LandingScreen">
+        <Stack.Screen name="LandingScreen" component={LandingScreen} />
+        <Stack.Screen name="HomeScreen" component={TabNavigator} />
+        <Stack.Screen name="MerchantScreen" component={MerchantScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };
