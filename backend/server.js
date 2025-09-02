@@ -15,7 +15,6 @@ const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/users');
 const mechanicRoutes = require('./routes/mechanics');
 const serviceRoutes = require('./routes/services');
-const paymentRoutes = require('./routes/payments');
 
 // Import middleware
 const { authenticateToken } = require('./middleware/auth');
@@ -87,9 +86,7 @@ app.set('io', io);
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', authenticateToken, userRoutes);
-app.use('/api/mechanics', authenticateToken, mechanicRoutes);
 app.use('/api/services', authenticateToken, serviceRoutes);
-app.use('/api/payments', authenticateToken, paymentRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
