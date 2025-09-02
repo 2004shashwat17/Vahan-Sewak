@@ -1,6 +1,6 @@
 # Vahan Sewak - Vehicle Assistance App
 
-A comprehensive React Native mobile application for connecting users with verified mechanics for vehicle breakdown assistance. Built with Expo, Node.js, Express, and MongoDB.
+A React Native mobile application for connecting users with verified mechanics for vehicle breakdown assistance. Built with Expo, Node.js, Express, and MongoDB.
 
 ## Features
 
